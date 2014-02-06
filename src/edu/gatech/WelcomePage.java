@@ -1,5 +1,6 @@
-package main.java.edu.gatech;
+package edu.gatech;
 
+import main.java.edu.gatech.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
