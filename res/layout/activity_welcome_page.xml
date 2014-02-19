@@ -9,6 +9,7 @@
     tools:context=".WelcomePage" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
@@ -21,6 +22,16 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="61dp"
         android:layout_marginRight="44dp"
-        android:text="Proceed" />
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginLeft="28dp"
+        android:text="Register" />
 
 </RelativeLayout>
