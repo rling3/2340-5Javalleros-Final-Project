@@ -2,6 +2,7 @@ package edu.gatech;
 
 import main.java.edu.gatech.LoginActivity;
 import main.java.edu.gatech.R;
+import main.java.edu.gatech.RegisterActivity;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -21,11 +22,21 @@ public class WelcomePage extends Activity implements OnClickListener{
         Button btn1 = (Button) findViewById(R.id.button1);
         btn1.setOnClickListener(new View.OnClickListener() {
         	public void onClick(View v) {
-        		Log.i("clicks","You Clicked B1");
+        		Log.i("clicks","You Clicked Login");
                 Intent i=new Intent(
                        WelcomePage.this,
                        LoginActivity.class);
                 startActivity(i);
+        	}
+        });
+        Button btn2 = (Button) findViewById(R.id.Button01);
+        btn2.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View v) {
+        		Log.i("clicks","You clicked Register");
+        		Intent i = new Intent (
+        				WelcomePage.this,
+        				RegisterActivity.class);
+        		startActivity(i);
         	}
         });
     }
