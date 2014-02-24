@@ -9,7 +9,7 @@
     tools:context=".RegisterActivity" >
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/field_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -17,39 +17,47 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="53dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="@string/prompt_username"
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button_return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/editText2"
+        android:layout_alignRight="@+id/field_password"
         android:layout_marginBottom="90dp"
-        android:text="Register" />
+        android:text="@string/action_register" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/field_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/field_password"
+        android:layout_below="@+id/field_password"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="@string/prompt_email"
         android:inputType="textEmailAddress" >
 
         <requestFocus />
     </EditText>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/field_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/field_username"
+        android:layout_below="@+id/field_username"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/prompt_password"
         android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_return"
+        android:layout_alignLeft="@+id/field_email"
+        android:text="@string/button_cancel" />
 
 </RelativeLayout>

@@ -89,7 +89,7 @@ public class LoginActivity extends Activity {
 						attemptLogin();
 					}
 				});
-		Button btn1 = (Button) findViewById(R.id.button1);
+		Button btn1 = (Button) findViewById(R.id.button2);
         btn1.setOnClickListener(new View.OnClickListener() {
         	public void onClick(View v) {
         		Log.i("clicks","You clicked Register");
