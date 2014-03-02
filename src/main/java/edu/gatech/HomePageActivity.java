@@ -20,7 +20,7 @@ public class HomePageActivity extends Activity {
 				Log.i("clicks", "clicked return button");
 				Intent i = new Intent(
 						HomePageActivity.this,
-						LoginActivity.class);
+						MainMenu.class);
 				startActivity(i);
 			}
 		});

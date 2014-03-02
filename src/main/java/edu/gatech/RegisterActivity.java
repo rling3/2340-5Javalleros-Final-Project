@@ -33,11 +33,9 @@ public class RegisterActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_register);
 		
-		rEmail = "Email";
 		rEmailField = (EditText) findViewById(R.id.field_email);
 		rEmailField.setText(rEmail);
 		
-		rUsername = "Username";
 		rUsernameField = (EditText) findViewById(R.id.field_username);
 		rUsernameField.setText(rUsername);
 		
