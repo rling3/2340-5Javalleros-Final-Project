@@ -16,6 +16,7 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -88,6 +89,16 @@ public class LoginActivity extends Activity {
 						attemptLogin();
 					}
 				});
+		Button btn1 = (Button) findViewById(R.id.button2);
+        btn1.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View v) {
+        		Log.i("clicks","You clicked Register");
+        		Intent i = new Intent (
+        				LoginActivity.this,
+        				RegisterActivity.class);
+        		startActivity(i);
+        	}
+        });
 	}
 
 	@Override
